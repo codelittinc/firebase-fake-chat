@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
+
+  <title>Codelitt Fake Chat</title>
+
+</head>
+
+<body>
+<div id="app">
+
+  <span class="current-user">You are not logged in</span>
+
+  <div class="login-as__container">
+    <button type="button" data-login-as="kaio">Login as Kaio</button>
+    <button type="button" data-login-as="spencer">Login as Spencer</button>
+    <button type="button" data-login-as="tisha">Login as Tisha</button>
+    <button type="button" data-login-as="anthony">Login as Anthony</button>
+  </div>
+
+  <div class="chat__container">
+    <div class="chat__messages">
+
+      <template id="chat-message-template">
+        <div class="chat-message">
+          <div>
+            <span class="chat-message__user"></span>
+            <span class="chat-message__message"></span>
+          </div>
+          <div>
+            <span class="chat-message__timestamp"></span>
+          </div>
+        </div>
+      </template>
+
+    </div>
+    <div class="chat__input">
+      <textarea placeholder="Type a message and hit Enter" id="message"></textarea>
+    </div>
+  </div>
+
+</div>
+</body>
+
+</html>
